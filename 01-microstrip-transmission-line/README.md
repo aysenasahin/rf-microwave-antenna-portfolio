@@ -26,8 +26,6 @@ The structure represents a PCB interconnect between RF circuit elements. It is a
 
 ## Geometry and Materials
 
-![Microstrip transmission-line geometry](figures/geometry.png)
-
 All dimensions and coordinates below are in **mm**, in the global coordinate system. The line extends along X, its width is along Y, and the stack-up is along Z.
 
 | Object | Material / role | Origin (X, Y, Z) | Dimensions |
@@ -105,8 +103,6 @@ The baseline passed HFSS Validation Check and reached **CONVERGED** after **10 a
 
 The final two consecutive passes met the specified criterion.
 
-![Baseline adaptive-convergence record](figures/baseline_convergence.png)
-
 This is evidence of baseline numerical convergence under the selected criterion, not a guarantee of 1% physical accuracy. The second model was re-solved, but its pass-by-pass convergence record is not included in this report. Check convergence for **both cases** when repeating or extending the comparison.
 
 Ansys describes the distinction between adaptive stopping settings in its [adaptive-analysis documentation](https://ansyshelp.ansys.com/public/Views/Secured/Electronics/v252/en/Subsystems/HFSS/Content/HFSS/SettingAdaptiveAnalysisParametersforHFSS.htm).
@@ -117,11 +113,8 @@ Ansys describes the distinction between adaptive stopping settings in its [adapt
 
 **Baseline — tanδ = 0.02**
 
-![Baseline S11 and S21 over 2–3 GHz, with markers at 2.45 GHz](figures/baseline_sparameters.png)
 
 **Zero-dielectric-loss case — tanδ = 0**
-
-![Zero-dielectric-loss S11 and S21 over 2–3 GHz, with markers at 2.45 GHz](figures/zero_dielectric_loss_sparameters.png)
 
 The report uses:
 
