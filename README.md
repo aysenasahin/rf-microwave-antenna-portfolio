@@ -12,8 +12,6 @@ The current portfolio features an HFSS microstrip transmission-line study. Anten
 
 [Read the project documentation](01-microstrip-transmission-line/README.md)
 
-![Microstrip transmission-line geometry in HFSS](01-microstrip-transmission-line/figures/geometry.png)
-
 A 40 mm PCB microstrip line with a nominal 50 Ω design target, modeled in Ansys HFSS. A controlled comparison changes the substrate loss tangent from 0.02 to 0 while retaining the same geometry, real permittivity, copper conductors, and simulation settings.
 
 - **Analysis:** Terminal S-parameters over 2–3 GHz; numerical comparison at 2.45 GHz.
