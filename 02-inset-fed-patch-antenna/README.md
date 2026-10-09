@@ -6,7 +6,7 @@ The design was tuned in HFSS and modeled in CST to compare input matching, radia
 
 - [HFSS model and result files](hfss/)
 - [CST model and result files](cst/)
-- [HFSS–CST S11 comparison and reproducible analysis](comparison/README.md)
+- [HFSS–CST S11 comparison and reproducible analysis](comparison/hfss_cst_s11_comparison/README.md)
 
 ![Antenna geometry](hfss/results/geometry.png)
 
@@ -83,7 +83,7 @@ Both one-port Touchstone exports use **50 Ω**. Target-frequency values are comp
 | Estimated −10 dB bandwidth | 76.1 MHz | 77.8 MHz |
 | Fractional bandwidth, referenced to 2.450 GHz | 3.11% | 3.17% |
 
-![HFSS–CST S11 comparison](comparison/results/hfss_cst_s11_comparison.png)
+![HFSS–CST S11 comparison](comparison/hfss_cst_s11_comparison/results/hfss_cst_s11_comparison.png)
 
 The sampled S11 minima differ by **9 MHz**, approximately **0.37% of the target frequency**, while the estimated bandwidths differ by approximately **1.7 MHz**. Both models show low reflection at 2.45 GHz; the HFSS model has the smaller reflection magnitude at this target frequency.
 
@@ -91,7 +91,7 @@ HFSS data were exported every **5 MHz**, and CST data every **1 MHz**. Minima th
 
 Different port representations, open-boundary settings, and mesh discretizations can contribute to the remaining differences. Their individual contributions have not been isolated, and a deeper S11 minimum alone does not establish greater simulation accuracy.
 
-[View the numerical comparison and reproduction method](comparison/README.md).
+[View the numerical comparison and reproduction method](comparison/hfss_cst_s11_comparison/README.md).
 
 ## Individual S11 Results
 
@@ -216,12 +216,12 @@ Each model met its configured convergence requirement. Pass counts depend on the
 - [Archived HFSS model](hfss/Patch_Antenna_2p45GHz_Final.aedtz)
 - [CST model folder](cst/)
 - [Final CST Touchstone export](cst/results/cst_s11_3.s1p)
-- [HFSS Touchstone export used in the comparison](comparison/data/hfss_s11.s1p)
-- [CST Touchstone export used in the comparison](comparison/data/cst_s11.s1p)
-- [Full numerical comparison table](comparison/results/hfss_cst_s11_metrics.csv)
-- [Python comparison script](comparison/compare_s11.py)
+- [HFSS Touchstone export used in the comparison](comparison/hfss_cst_s11_comparison/data/hfss_s11.s1p)
+- [CST Touchstone export used in the comparison](comparison/hfss_cst_s11_comparison/data/cst_s11.s1p)
+- [Full numerical comparison table](comparison/hfss_cst_s11_comparison/results/hfss_cst_s11_metrics.csv)
+- [Python comparison script](comparison/hfss_cst_s11_comparison/compare_s11.py)
 
-The comparison script regenerates the S11 figure and numerical table directly from the two exports. Instructions are provided in [comparison/README.md](comparison/README.md#reproduce).
+The comparison script regenerates the S11 figure and numerical table directly from the two exports. Instructions are provided in [the comparison README](comparison/hfss_cst_s11_comparison/README.md#reproduce).
 
 ## Tools and Methods
 
