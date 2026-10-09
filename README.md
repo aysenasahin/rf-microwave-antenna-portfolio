@@ -21,7 +21,7 @@ A **40 mm FR4 microstrip transmission line** with a nominal **50 Ω** design tar
 
 ### 02 · Inset-Fed Microstrip Patch Antenna — HFSS Design & CST Comparison
 
-[View project documentation](02-inset-fed-patch-antenna/README.md) · [Reproducible S11 comparison](02-inset-fed-patch-antenna/comparison/README.md)
+[View project documentation](02-inset-fed-patch-antenna/README.md) · [Reproducible S11 comparison](02-inset-fed-patch-antenna/comparison/hfss_cst_s11_comparison/README.md)
 
 A **2.45 GHz inset-fed rectangular patch antenna** designed and optimized in HFSS, then modeled in CST to compare input matching and radiation characteristics.
 
@@ -33,7 +33,7 @@ A **2.45 GHz inset-fed rectangular patch antenna** designed and optimized in HFS
 - Documented field distributions, surface currents, and adaptive mesh convergence.
 - Included both model archives, result figures, numerical exports, and a Python script that reproduces the S11 comparison.
 
-![HFSS–CST S11 comparison](02-inset-fed-patch-antenna/comparison/results/hfss_cst_s11_comparison.png)
+![HFSS–CST S11 comparison](02-inset-fed-patch-antenna/comparison/hfss_cst_s11_comparison/results/hfss_cst_s11_comparison.png)
 
 **Topics:** Microstrip Patch Antennas · Inset Feeding · Impedance Matching · Far-Field Radiation · Mesh Convergence · HFSS · CST · Simulation Comparison
 
