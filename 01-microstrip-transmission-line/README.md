@@ -202,13 +202,3 @@ To repeat the comparison:
 
 See Ansys documentation for [archiving projects](https://ansyshelp.ansys.com/public/Views/Secured/Electronics/v252/en/Subsystems/HFSS/Content/Variables/ArchivingProjects.htm) and [restoring an archive](https://ansyshelp.ansys.com/public/Views/Secured/Electronics/v251/en/Subsystems/HFSS/Content/Variables/RestoreArchiveCommand.htm).
 
-## Further Work
-
-The following are proposed extensions, not completed results:
-
-- Preserve convergence records for both models and test tighter numerical settings.
-- Export full complex S-parameters in Touchstone format.
-- Cross-check characteristic impedance and study trace-width sensitivity.
-- Visualize fields and surface currents to connect the geometry with propagation and return-current behavior.
-- Compare finite-conductivity copper with an ideal-conductor case, supported by direct power-loss evaluation.
-- Investigate boundary and port sensitivity before drawing conclusions from small residual losses.
